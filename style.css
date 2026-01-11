@@ -1,38 +1,99 @@
-body {
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-    background-color: #f9f9f9;
+}
+
+/* Estructura general */
+body {
+    background-color: #f5f6f8;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    margin-bottom: 30px;
+    background-color: #004578;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 22px;
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
 }
 
-h2 {
-    font-size: 18px;
-    margin-top: 30px;
+header p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1rem;
 }
 
-.info p {
-    margin: 5px 0;
+/* Contenido principal */
+main {
+    padding: 40px 20px;
 }
 
-.contenido {
-    margin-top: 20px;
+.video-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-video {
-    margin-top: 15px;
-    border: 1px solid #ccc;
+.video-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
+/* Contenedor del video */
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    padding: 0 15px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Texto descriptivo */
+.video-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Footer */
 footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 15px;
     margin-top: 40px;
-    font-size: 12px;
+    font-size: 0.85rem;
     color: #666;
+}
+
+/* ===== BLOQUE META (AQUÍ VA, AL FINAL) ===== */
+.meta {
+    margin-top: 15px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.meta p {
+    margin: 6px 0;
+    font-size: 0.95rem;
 }
